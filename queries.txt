@@ -1,0 +1,7 @@
+{isActive : true}
+{age: {$gt: 26}}
+{age: {$gt: 26, $lte: 30}}
+{eyeColor: {"$in": ["brown", "blue"]}}
+{eyeColor: {$ne: "green"}}
+{eyeColor: {$nin: ["green", "blue"]}}
+{company: "FITCORE","email": 1}
