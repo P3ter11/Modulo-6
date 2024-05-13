@@ -1,0 +1,17 @@
+.form-access{
+    width: 50%;
+    height: auto;
+    margin: 30vh auto;
+    padding: 15px;
+    border: 2px solid lightblue;
+}
+
+.form-add-post{
+    margin-top: 10vh;
+    border: 2px solid lightblue;
+    padding: 15px;
+}
+
+.card-post{
+    width: 45%;
+}
