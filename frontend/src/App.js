@@ -11,6 +11,7 @@ import "./App.css";
 import ProtectedAuthRoute from './components/ProtectedAuthRoute.jsx';
 import Profile from './components/Profile.jsx';
 import MyNav from './components/NavBar.jsx';
+import Users from './components/Users.jsx';
 
 function App() {
 
@@ -33,11 +34,10 @@ function App() {
           <Route path="/register" element={<RegistrationForm/>}/>
           <Route path="/login" element={<LoginForm/>}/>
           
-
           <Route element={<ProtectedAuthRoute/>}>
             <Route path="/profile" element={<div><MyNav/><Profile/></div>}/>
             <Route path="/home" element={<div><MyNav/><Home/></div>}/>
-            <Route path="/users" element={<Home/>}/>
+            <Route path="/users" element={<div><MyNav/><Users/></div>}/>
           </Route>
           <Route path="/*" element={<h1>404 Page non found</h1>}></Route>
         </Routes>

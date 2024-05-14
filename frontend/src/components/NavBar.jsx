@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
-import { Navbar, Nav, Container, Form, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Form, Button} from "react-bootstrap";
 import LogoutButton from "./LogoutButton";
+import { Link } from "react-router-dom";
 
 export default function MyNav(){
 
@@ -12,7 +13,11 @@ export default function MyNav(){
         bg="dark"
       >
         <Container fluid>
-          <Navbar.Brand href="#" className="text-light">StriveBlog</Navbar.Brand>
+        <Link to="/" style={{textDecoration: "none"}}>
+          <Navbar.Brand href="#" className="text-light">
+            StriveBlog
+          </Navbar.Brand>
+        </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

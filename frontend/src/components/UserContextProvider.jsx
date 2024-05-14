@@ -7,7 +7,7 @@ export default function UserContextProvider({ children }) {
 
   const [nameData, setNameData] = useState(null);
   const [token, setToken] = useState(localStorage.getItem("token") || "");
-  const [authenticated, setAuthenticated] = useState(false);
+  const [authenticated, setAuthenticated] = useState(true);
 
   useEffect(() =>{
     setAuthenticated(token!=="");
